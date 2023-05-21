@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".nav_fragments.HomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/homeNavbar"
+        android:background="#2573FA"
+        android:paddingBottom="15dp">
+
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Welcome Home,"
+            android:textColor="@color/white"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:typeface="normal"
+            />
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/welcome"
+            android:layout_marginStart="16dp"
+            android:maxLength="24"
+            android:text="User Name"
+            android:textColor="#fff"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/person"
+            app:civ_border_color="#FFFFFF"
+            app:civ_border_overlay="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerViewLayout"
+        android:layout_below="@+id/homeNavbar">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recyclerViewText"
+            android:text="CURRENT EVENTS"
+            android:fontFamily="monospace"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:textSize="30sp"/>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/dashboard_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/recyclerViewText"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="30dp"
+            android:orientation="horizontal" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

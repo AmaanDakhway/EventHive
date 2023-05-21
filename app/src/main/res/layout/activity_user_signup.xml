@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".UserSignupActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/RegisterText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="200dp"
+                android:layout_marginBottom="30dp"
+                android:fontFamily="cursive"
+                android:text="Register Here"
+                android:textColor="#fff"
+                android:textSize="40sp"
+
+                />
+
+            <EditText
+                android:id="@+id/Name"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/RegisterText"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/custom_color"
+                android:drawableStart="@drawable/ic_name"
+                android:drawableLeft="@drawable/ic_name"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="Name"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:textColorHint="#FFFFFF"
+                android:textSize="24sp"
+
+                />
+
+            <EditText
+                android:id="@+id/Email"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/custom_color"
+                android:drawableStart="@drawable/ic_email"
+                android:drawableLeft="@drawable/ic_email"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:textColorHint="#FFFFFF"
+                android:textSize="24sp"
+
+                />
+
+            <EditText
+                android:id="@+id/Password"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Email"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/custom_color"
+                android:drawableStart="@drawable/ic_lock"
+                android:drawableLeft="@drawable/ic_lock"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:textColorHint="#FFFFFF"
+                android:textSize="24sp" />
+
+            />
+
+            <Button
+                android:id="@+id/Submit"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Password"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_color"
+                android:text="Submit"
+                android:textColor="#ffff"
+                android:textSize="15sp"
+                app:backgroundTint="@null" />
+
+            <TextView
+                android:id="@+id/LogInPrompt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Submit"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="Already Registered? Click here to Log In."
+                android:textColor="#fff"
+                android:textSize="20dp" />
+        </RelativeLayout>
+    </ScrollView>
+
+
+    <!--    <TextView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:id="@+id/title"-->
+    <!--        android:text="Welcome to Signup Screen"-->
+    <!--        android:layout_centerInParent="true"-->
+    <!--        android:textSize="20sp"/>-->
+
+    <!--    <Button-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:id="@+id/LoginActivity"-->
+    <!--        android:layout_below="@+id/title"-->
+    <!--        android:layout_marginLeft="40dp"-->
+    <!--        android:layout_marginRight="40dp"-->
+    <!--        android:text="Go to Login Page"/>-->
+
+
+</RelativeLayout>
